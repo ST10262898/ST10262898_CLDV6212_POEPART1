@@ -1,4 +1,4 @@
-﻿using Azure;
+using Azure;
 using Azure.Data.Tables;
 using System;
 
@@ -8,8 +8,8 @@ namespace ST10262898_CLDV6212_POEPART1.Models
     {
         public string PartitionKey { get; set; }
         public string RowKey { get; set; }
-        public DateTimeOffset? TimeStamp {get; set;}
-        public Etag Etag { get; set; }
+        public DateTimeOffset? Timestamp { get; set; }
+        public ETag ETag { get; set; }
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
