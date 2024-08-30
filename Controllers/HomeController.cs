@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ST10262898_CLDV6212_POEPART1.Models;
+using ST10262898_CLDV6212_POEPART1.Services;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
