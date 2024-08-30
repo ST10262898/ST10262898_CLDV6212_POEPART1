@@ -1,8 +1,70 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+@model ST10262898_CLDV6212_POEPART1.Models.CustomerProfile
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Upload Image</h5>
+                    <form asp-action="UploadImage" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input type="file" name="file" class="form-control-file" />
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Upload Image</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Add Customer Profile</h5>
+                    <form asp-action="AddCustomerProfile" method="post">
+                        <div class="form-group">
+                            <input type="text" name="FirstName" placeholder="First Name" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="LastName" placeholder="Last Name" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="Email" placeholder="Email" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="PhoneNumber" placeholder="Phone Number" class="form-control" />
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Add Profile</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Process Order</h5>
+                    <form asp-action="ProcessOrder" method="post">
+                        <div class="form-group">
+                            <input type="text" name="orderId" placeholder="Order ID" class="form-control" />
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Process Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Upload Contract</h5>
+                    <form asp-action="UploadContract" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input type="file" name="file" class="form-control-file" />
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Upload Contract</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
